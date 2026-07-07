@@ -43,7 +43,7 @@ final class BathTimeUITests: XCTestCase {
         titleField.tap()
         titleField.typeText("Dismiss test")
         XCTAssertTrue(app.keyboards.element.exists)
-        app.staticTexts.firstMatch.tap()
+        app.navigationBars.firstMatch.tap()
         XCTAssertFalse(app.keyboards.element.exists)
     }
 
